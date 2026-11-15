@@ -1,0 +1,1 @@
+export function createSpeechPlayer(synth:SpeechSynthesis,Utterance:typeof SpeechSynthesisUtterance,callbacks?:{onState?:(playing:boolean)=>void;onError?:(message:string)=>void}):{play:(texts:string[],options?:{voiceURI?:string;rate?:number;pitch?:number})=>void;stop:()=>void};
