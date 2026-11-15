@@ -1,0 +1,27 @@
+[
+  {
+    "id": "leadership",
+    "title": "Learning to See the Bigger Picture",
+    "projectId": "leadership",
+    "date": "2026-11-19",
+    "lastEditedAt": null,
+    "file": "leadership/speech.json"
+  },
+  {
+    "id": "9dfffefa-55ac-409e-921b-199980e966f2",
+    "title": "Ice Breaker",
+    "projectId": "ice",
+    "date": "2026-03-05",
+    "deletedAt": "2026-11-15T05:49:13.537Z",
+    "lastEditedAt": null,
+    "file": "9dfffefa-55ac-409e-921b-199980e966f2/speech.json"
+  },
+  {
+    "id": "c2bd727f-23c8-41c0-a043-20fcf6ec2d37",
+    "title": "Ice Breaker",
+    "projectId": "ice",
+    "date": "2026-03-05",
+    "lastEditedAt": null,
+    "file": "c2bd727f-23c8-41c0-a043-20fcf6ec2d37/speech.json"
+  }
+]
