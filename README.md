@@ -55,3 +55,22 @@ npx tsc --noEmit
 資料讀寫依伺服器提供的使用者身分隔離，並以 revision 檢查版本衝突。講稿內含個人經驗，儲存庫應保持私人。
 
 不應提交 `node_modules`、`.wrangler`、`.sites-runtime`、`.env*`、資料庫檔案或任何存取權杖。此備份不含本機登入資料或原始 SQLite 資料庫。
+
+## GitHub Pages 靜態版
+
+公開網址預期為 https://shmily7829.github.io/speech-studio/ ，必須等 Pages 工作流程成功才代表已上線。
+
+1. 在儲存庫 Settings → Pages → Build and deployment 將 Source 選為 GitHub Actions。
+2. 推送 main 後，`.github/workflows/pages.yml` 會建置並發布 `dist-pages/`。
+3. 在 Actions 查看工作流程結果。若 Source 尚未設定，configure-pages 會失敗；設定後重新執行失敗工作即可。
+
+本機測試：
+
+```sh
+npm run build:pages
+npm run dev:pages
+```
+
+靜態版入口在 `pages/`，與原先 Sites 伺服器版分開建置。它不需要登入或 D1；使用目前瀏覽器的 localStorage 保存，沒有自動雲端同步。演講庫的「匯出／匯入備份」可在裝置間轉移整個演講庫、舊稿及練習紀錄。清除網站資料或使用無痕模式可能失去未備份修改。
+
+公開網站的初始講稿來自 `speeches/` 中的備份快照。儲存庫已由擁有者改為 Public，因此這些稿件與提交歷史已公開。本機後續修改不會自動上傳 GitHub。
