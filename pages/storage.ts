@@ -1,10 +1,11 @@
 import manifest from '../speeches/manifest.json';
+import {applyPublishedSpeech} from './published-speech';
 import {validData} from '../app/api/practice/validation';
 const files=import.meta.glob('../speeches/*/speech.json',{eager:true,import:'default'}) as Record<string,any>;
 const prefix='speech-studio-pages:v1:';
 type RecordData={data:any;revision:number};
-function seed(id:string):RecordData{if(id==='library')return {revision:0,data:{kind:'library',speeches:manifest.map(s=>({...s}))}};const f=files[`../speeches/${id}/speech.json`];return {revision:0,data:f?{sections:f.sections,history:f.history||[],done:f.done||[],versions:f.versions||[],lastEditedAt:f.lastEditedAt}:null}}
-function read(id:string):RecordData{const item=localStorage.getItem(prefix+id);return item?JSON.parse(item):seed(id)}
+function seed(id:string):RecordData{if(id==='library')return {revision:0,data:{kind:'library',speeches:manifest.map(s=>({...s}))}};const f=files[`../speeches/${id}/speech.json`];return {revision:0,data:f?{sections:f.sections,history:f.history||[],done:f.done||[],versions:f.versions||[],lastEditedAt:f.lastEditedAt,publishedVersion:f.publishedVersion}:null}}
+function read(id:string):RecordData{const item=localStorage.getItem(prefix+id);const old=item?JSON.parse(item):seed(id);const next=applyPublishedSpeech(old,files[`../speeches/${id}/speech.json`]);if(next!==old)localStorage.setItem(prefix+id,JSON.stringify(next));return next}
 function enrich(data:any){if(data?.kind!=='library')return data;return {...data,speeches:data.speeches.map((s:any)=>({...s,lastEditedAt:read(s.id).data?.lastEditedAt}))}}
 export async function localRequest(input:string,init?:RequestInit){const id=new URL(input,location.origin).searchParams.get('speech')||'leadership';if(!/^[a-zA-Z0-9-]{1,80}$/.test(id))return Response.json({error:'講稿編號錯誤'},{status:400});
  // Prevent two tabs from overwriting one another when the browser supports Web Locks.

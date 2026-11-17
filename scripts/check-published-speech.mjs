@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import {applyPublishedSpeech} from '../pages/published-speech.ts';
+const old={revision:7,data:{sections:[{en:'device draft'}],history:[{seconds:322}],done:[0],versions:[],lastEditedAt:'2026-11-15T00:00:00Z'}};
+const published={publishedVersion:'final-20261117-v1',sections:[{en:'published speech'}],lastEditedAt:'2026-11-17T00:00:00Z'};
+const updated=applyPublishedSpeech(old,published);
+assert.equal(updated.revision,8);assert.deepEqual(updated.data.history,old.data.history);assert.deepEqual(updated.data.versions[0].sections,old.data.sections);assert.deepEqual(updated.data.sections,published.sections);assert.deepEqual(updated.data.done,[]);assert.equal(old.data.sections[0].en,'device draft');
+updated.data.sections=[{en:'new personal edits after publication'}];
+assert.equal(applyPublishedSpeech(updated,published),updated,'reopening must retain later personal edits');
+assert.equal(applyPublishedSpeech(old,undefined),old,'other speeches must stay unchanged');
+console.log('Published speech update preserves history, prior draft and later edits.');

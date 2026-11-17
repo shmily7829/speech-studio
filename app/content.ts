@@ -1,7 +1,42 @@
 export const initialSections=[
-{title:'新的角色',label:'A new role',cue:'manager → project → lead → ready → nervous → try',en:`Recently, I met with my manager. I thought we would just talk about a project. Instead, he asked me to lead our project team. He believed I was ready. I felt nervous, but I wanted to give it a try.`,zh:`前陣子，我和主管碰面。我以為我們只是要討論一個專案，沒想到他卻請我帶領專案小組。他相信我已經準備好了。我有些緊張，但也想試試看。`,tip:'像分享近況。說完 ready，停一下再帶出 nervous。'},
-{title:'我的領導風格',label:'My leadership style',cue:'test → democratic → manager → coaching → try → advice → grow',en:`To prepare for this speech, I took a leadership style test. My top style was democratic leadership. Leaders with this style usually listen to people’s ideas before making a decision.\n\nThe test helped me learn more about myself. It also made me think about my manager’s leadership style.\n\nI think he is a coaching leader. When I have a technical problem, he doesn’t just give me the answer. He first asks what I think and lets me try. When I get stuck and ask for help, he offers advice. This helps me learn and grow, and I hope to become a leader like him.`,zh:`為了準備這次演講，我做了一份領導風格測驗。我的最高分是民主型領導。這類型的領導者，通常會先聽大家的意見，再做決定。\n\n測驗讓我更了解自己，也讓我想到主管的領導風格。\n\n我認為他是教練型領導者。遇到技術問題時，他不會直接給我答案。他先問我的想法，讓我嘗試；當我卡住並求助時，他才提供建議。這讓我學習成長，我也希望成為像他一樣的領導者。`,tip:'談到主管時語氣溫暖。注意 asks、lets 的結尾。'},
-{title:'看見自己的習慣',label:'My challenge',cue:'my own style → my way → solution → helpful → upset → problem remains',en:`But then I thought about my own style. At work, I listen to other people’s ideas, but I still do things my way.\n\nWhen someone has a problem, I usually give them my solution. At least to me, it feels helpful and fast.\n\nBut when they don’t understand my idea or don’t want to try it, I get upset, and the problem is still there.`,zh:`但接著，我想到自己的風格。在工作上，我聽取別人的意見，最後卻還是照自己的方式做。\n\n有人遇到問題時，我通常直接給出自己的解決方案。至少對我來說，這樣很有效率，也是在幫忙。\n\n但當對方不理解或不想嘗試時，我就感到煩躁，而問題依然存在。`,tip:'At least to me 輕一點，像自我調侃。problem is still there 後停兩秒。'},
-{title:'主管的提醒',label:'A different perspective',cue:'manager → solving the problem → goal or my way? → other ideas',en:`When I talked to my manager about this, he told me it’s hard to get people to do something they don’t want to do. He told me, “What matters is solving the problem.”\n\nHis advice made me think. Was I focused on our goal? Or did I care too much about doing things my way?\n\nMy way is one choice. Other people’s ideas can work too. They might even work better.`,zh:`我和主管談起這件事時，他說：要讓別人做不願意做的事很困難。他告訴我：「重要的是解決問題。」\n\n這讓我開始思考：我關注的是我們的目標，還是太在意別人照我的方式做？\n\n我的方法是一個選擇。別人的想法也可能有效，甚至更好。`,tip:'主管的話放慢。問完 Was I focused on our goal? 停一下，再問自己第二個問題。'},
-{title:'三個行動',label:'Three things to practice',cue:'goal + deadline → keep it to myself → room → try → results → point it out',en:`With that in mind, there are three things I want to practice.\n\nFirst, set a clear goal.\n\nBefore we start, I’ll confirm the goal and the deadline with the team. I can think of a solution, but I’ll keep it to myself at first. That gives others a chance to think before they hear my answer.\n\nSecond, give people room to work.\n\nOnce the goal is clear, I’ll let each person plan their own work. I’ll give them time to try and learn before I step in.\n\nThird, check the results and point out anything missing.\n\nI’ll check whether we’ve met the goal. If I notice something they may have missed, I’ll point it out and ask them to check it. That way, we can stay on track while they take responsibility for their work.`,zh:`因此，我想練習三件事。\n\n第一，訂清楚目標。\n\n開始前，先與團隊確認目標和期限。我可以先想解決方案，但先保留自己的答案，讓大家有機會先思考。\n\n第二，給大家發揮空間。\n\n目標清楚後，讓每個人規劃自己的工作。在介入前，先給他們嘗試和學習的時間。\n\n第三，檢查成果，指出遺漏。\n\n確認目標是否達成。如果發現對方可能忽略的事，就提出來並請他們確認。這樣能維持方向，也讓大家對自己的工作負責。`,tip:'First / Second / Third 清楚說完再停一下。整塊記：keep it to myself、met the goal、point it out。'},
-{title:'看見全局',label:'The bigger picture',cue:'grow → open mind → learn → less detail → more room → bigger problems → better leader',en:`Letting people try their own ideas helps the team grow and find new ways to do things. It also gives me a chance to keep an open mind and learn from their ideas and experience.\n\nFor me, seeing the bigger picture means spending less time on every detail and giving people more room. This helps me step back and focus on solving bigger problems.\n\nThat’s how I hope to become a better leader.\n\nThank you.`,zh:`讓大家嘗試自己的想法，有助於團隊成長，並找到新的做事方法。這也讓我保持開放的心態，從他人的想法與經驗中學習。\n\n對我來說，看見全局就是少拘泥於每個細節，給大家更多空間。這能幫助我退一步思考，專注解決更大的問題。\n\n這就是我希望成為更好的領導者的方式。\n\n謝謝。`,tip:'結尾逐漸放慢。solving bigger problems 一口氣說完，最後抬頭看觀眾。'}];
+  {
+    "title": "1. A New Challenge",
+    "label": "A New Challenge",
+    "en": "About a year ago, my manager asked me to lead our project team.\n\nMe? A leader? I never pictured myself in that role.\n\nDo you remember the first time you had to lead a team? How did you feel?\n\nI felt nervous. But my manager believed in me, even when I wasn’t sure about myself.\n\nHe had just become our manager and was leading about twenty people. It was a big challenge, but he always seemed calm.\n\nIt made me wonder, “How does he do that?”",
+    "zh": "大約一年前，主管請我帶領我們的專案小組。\n\n我？領導者？我從沒想過自己會擔任這個角色。\n\n你還記得第一次需要帶領團隊的時候嗎？你有什麼感受？\n\n我很緊張。但即使我對自己沒把握，主管仍然相信我。\n\n他當時剛成為我們的主管，帶領約二十人。挑戰很大，他卻總是很冷靜。\n\n這讓我好奇：「他是怎麼做到的？」",
+    "cue": "a year ago → lead our team → Me? A leader? → first time? → nervous / believed in me → twenty people / calm → How does he do that?",
+    "tip": "Me? A leader? 指向自己、停 1 秒。How did you feel? 看觀眾、停 2 秒。nervous 與 believed in me 做對比。twenty people 說清楚；seemed calm 放慢。最後帶好奇，停一下再接主管的做法。"
+  },
+  {
+    "title": "2. My Own Coach Anzai",
+    "label": "My Own Coach Anzai",
+    "en": "When I had a technical problem, he didn’t just give me the answer. He would ask, “What do you think? Let’s hear your plan first.”\n\nHe let me try first. When I needed help, he was there.\n\nWhen our system had a problem, he stayed calm and said, “Ha ha, don’t worry. Let’s fix it.”\n\nNo angry voice. No panic. Just, “Let’s fix it.”\n\nDo you know the anime Slam Dunk?\n\nMy manager is like a younger version of Coach Anzai.\n\nCalm, kind, and… “Ho ho ho!”\n\nI wanted to be a leader like him—a female version of Coach Anzai!",
+    "zh": "遇到技術問題時，他不會直接給答案，而會問：「你怎麼想？先說說你的計畫吧。」\n\n他先讓我嘗試。當我需要幫助時，他就在身邊。\n\n系統出問題時，他保持冷靜，說：「哈哈，別擔心。我們一起修好它。」\n\n沒有生氣的聲音，沒有慌張，只有：「我們一起修好它。」\n\n你知道《灌籃高手》這部動畫嗎？\n\n我的主管就像年輕版的安西教練。\n\n冷靜、親切，還有……「呵呵呵！」\n\n我也想成為像他一樣的領導者——女版安西教練！",
+    "cue": "technical problem → your plan first → try first / help → system problem / Let’s fix it → no panic → Slam Dunk / Coach Anzai → Ho ho ho → female version",
+    "tip": "主管對話溫暖、沉穩。He let me try first.／When I needed help, he was there. 說完整再停。No angry voice.／No panic.／Just, Let’s fix it. 逐塊說。Calm, kind, and… 停一下，配合安西教練笑聲動作。female version 帶笑，留 2 秒給觀眾反應。"
+  },
+  {
+    "title": "3. My Way Feels Faster",
+    "label": "My Way Feels Faster",
+    "en": "But as I lead the team, I notice a problem.\n\nWhen someone asks me a question, I usually give them my solution.\n\nIt feels helpful and fast. But when they don’t understand my idea or don’t want to try it, I feel upset.\n\nAnd the problem’s still there.\n\nI need some help. Maybe I’m doing something wrong.",
+    "zh": "但當我帶領團隊時，我注意到一個問題。\n\n有人問我問題時，我通常直接給出自己的解決方案。\n\n這感覺既有幫助又快速。但對方不理解我的想法或不想嘗試時，我就感到煩躁。\n\n而問題依然存在。\n\n我需要幫忙。也許我的做法有問題。",
+    "cue": "lead the team → a problem → my solution → helpful and fast → don’t understand / don’t try → upset → problem still there → need help",
+    "tip": "從本段開始用現在式重現故事。my solution、helpful and fast 稍加重音。But 帶出轉折；upset 表現困惑。the problem’s still there 後停 2 秒。I need some help 像心裡話，接 Maybe I’m doing something wrong，再轉向主管。"
+  },
+  {
+    "title": "4. A Different Way to Help",
+    "label": "A Different Way to Help",
+    "en": "So I go to my manager.\n\n“Why is this so hard? Am I doing something wrong?”\n\nHe smiles and says, “You cannot control how people think. If you give them every answer, how can they learn?”\n\n“Just check the main points. You don’t need to check every detail.”\n\nThen he adds, “The real value is solving problems with no clear answers. Focus on this.”\n\nI begin to see: I don’t have to solve every problem by myself.",
+    "zh": "於是我去找主管。\n\n「為什麼這麼難？是我做錯了什麼嗎？」\n\n他微笑著說：「你無法控制別人怎麼想。如果你把所有答案都給他們，他們怎麼學習？」\n\n「只要確認重點，不需要檢查每個細節。」\n\n接著他說：「真正的價值是解決沒有明確答案的問題。專注在這件事上。」\n\n我開始明白：不必每個問題都由我獨自解決。",
+    "cue": "go to my manager → Why so hard? → smiles and says → control how people think → every answer / how learn? → main points → no clear answers / Focus on this → not by myself",
+    "tip": "自己的提問帶困惑，主管回答微笑、平穩。smiles and says 一起記。how can they learn? 後停 1 秒。main points 與 every detail 做對比。The real value… 放慢，no clear answers 完整說出；Focus on this. 簡短肯定，停 2 秒。最後用領悟的語氣說 I don’t have to solve every problem by myself。"
+  },
+  {
+    "title": "5. Learning to See the Bigger Picture",
+    "label": "Learning to See the Bigger Picture",
+    "en": "Now, I’m learning to step back and listen first.\n\nI just check the results and point out what they may have missed.\n\nGiving people room helps us learn and grow.\n\nIt also gives me more time to solve harder problems—and see the bigger picture.\n\nMy manager gave me room to grow.\n\nNow, it’s my turn to do the same.\n\nThank you.",
+    "zh": "現在，我正在學習退一步，先聽別人說。\n\n我只檢查結果，並指出他們可能遺漏的地方。\n\n給大家空間，讓我們都能學習成長。\n\n這也讓我有更多時間解決更難的問題——看見全局。\n\n主管給了我成長的空間。\n\n現在，輪到我做同樣的事了。\n\n謝謝。",
+    "cue": "Now → step back / listen first → results / what they missed → learn and grow → harder problems / bigger picture → room to grow → my turn → Thank you",
+    "tip": "Now 語氣轉為肯定；重讀 step back、listen first。先說完整 check the results，再接 point out what they may have missed。harder problems 後短停，再說 see the bigger picture。My manager gave me room to grow 帶感謝，停 2 秒。my turn 看觀眾、加重音，最後微笑說 Thank you。"
+  }
+];
